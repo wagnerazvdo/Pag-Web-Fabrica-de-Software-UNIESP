@@ -1,0 +1,518 @@
+/*--- Aqui serão Colocados toda estilização do site ---*/
+html,
+body {
+	margin: 0;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	color: #fff;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 1.2;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 08px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #565555;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+.topoiesp {
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+}
+.logoiesp {
+	width: 100px;
+	height: 50px;
+	margin-left: 20%;
+	float: left;/*--- Float coloca o objeto direcionado a esquerda ou direita ---*/
+	
+}
+.menuiesp {
+	float: left;
+	list-style: none;
+	padding: 15px;
+}
+
+.menuiesp li{
+	display: inline; /*--- Display é propriedade especifica o comportamento de exibição. Neste Caso INLINE como o menu EM LINHA ---*/
+}
+.menuiesp li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase; /* Colocar em caixa alta*/
+	font-weight: 500;
+	padding: 25px 20px;
+	margin-right: -5px;
+}
+.menuiesp li a:hover {
+	color: #e01b22;
+}
+.buscador {
+	width: 50px;
+	height: 20px;
+	padding: 10px;
+	margin-left: 5%;
+	float: left;
+}
+/*---  Começa o Topo do Site da Fábrica ---*/
+.topo {
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.logofabrica {	
+	width: 100px;
+	height: 100px;
+	margin-left: 19%;
+	float: left;
+}
+.info {
+	width: 50%;
+	height: 100px;
+	float: right;
+	margin-right: 10%;
+	background-color: #fff;
+}
+.info .info-item {
+	display: inline-block;
+	margin-left: 35px;
+	background-color: #fff;
+	width: 300px;
+	height: 100px;
+	padding: 30px;
+}
+.info .info-item a {
+	float: left;
+	width: 60px;
+	height: 60px;
+
+}
+.info .info-item p {
+	float: left;
+	margin-top: 0;
+
+}
+.info .info-item span {
+	font-weight: bold;
+}
+/*---  Começa Menu do Site ---*/
+.barramenusite {
+	background-color: #002a20;
+	width: 100%;
+	overflow: visible;
+	height: 64px;
+}
+.menufabrica {
+	width: 55%;
+	margin-left: 5%;
+	zoom: 1;
+	float: left;
+}
+.menufabrica > ul {
+  background: #1bdfb1;
+  padding-bottom: 3px;
+  font-weight: 600;
+  float: left;
+}
+.menufabrica:before,
+.menufabrica:after,
+.menufabrica > ul:before,
+.menufabrica > ul:after {
+  content: "";
+  display: table;
+}
+.menufabrica:after,
+.menufabrica > ul:after {
+  clear: both;
+}
+.menufabrica > ul {
+  background: #002a20;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+}
+.menufabrica > ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menufabrica > ul > li {
+  float: left;
+  position: relative;
+}
+.menufabrica > ul > li > a {
+  padding: 23px 26px;
+  display: block;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+.menufabrica > ul > li:hover > a {
+  background: #1bdfb1;
+
+}
+.menufabrica > ul > li > a > span {
+  line-height: 18px;
+}
+.menufabrica > ul > li.active > a,
+.menufabrica > ul > li > a:active {
+  background: #1bdfb1;
+}
+/* Submenu */
+.menufabrica > ul ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 120px;
+  background: #dbe2e0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+
+}
+.menufabrica > ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+  z-index: 2;
+  top: 64px;
+  left: 0;
+}
+.menufabrica > ul ul:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+
+}
+.menufabrica > ul ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.menufabrica > ul ul li a {
+  padding: 18px 26px;
+  display: block;
+  color: #002a20;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+  border-left: 4px solid transparent;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.menufabrica > ul ul li a:hover {
+  border-left: 3px solid #1bdfb1;
+  border-right: 3px solid #1bdfb1;
+  color: #1bdfb1;
+
+}
+.menufabrica > ul ul li a:active {
+  background: #b1e9dc;
+}
+.divbuscaum {
+	width:500px;
+	display: inline-block;
+	float: right;
+}
+.divbuscadois {
+	display: inline-block;
+	border:solid 2px;
+	border-color: #fff;
+	border-radius:15px;
+	width:200px;
+	height: 30px;
+	margin-top: 15px;
+	overflow: visible;
+}
+.divbuscadois a {
+	float: right;
+	margin: 2px;
+	width: 30px;
+}
+.txtbusca {
+	background-color: transparent;
+	border: 0;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 145px;
+
+}
+/*--- Aqui começa o SLideBAr ---*/
+.bar {
+	background-color: #1bdfb1;
+	width: 100%;
+	height: 520px;
+	margin: 0px;
+	position: relative;
+	display: block;
+}
+.foto {
+	width: 60%;
+	height: 520px;
+	float: left;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+.foto img {
+	width: 100%;
+	height: 100%;
+}
+.info-materia {
+	height: 520px;
+}
+.info-title {
+	width: 30%;
+	float: left;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	margin-left: 100px;
+}
+.info-subtitle {
+	float: left;
+	width: 30%;
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 100px;
+}
+.info-botao {
+	margin-left: 100px;
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 18px 30px;
+	font-size: 20px;
+	text-align: center;
+	border: solid 2px;
+	border-color: #fff;
+	cursor: pointer;
+}
+/*--- Aqui começa o Servico ---*/
+.servico {
+	width: 100%;
+	height: 520px;
+	background-color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+
+}
+.servico-titulo {
+	text-align: center;
+}
+.servico-titulo h2, p {
+	color: black;
+}
+.quadros {
+	width: 100%;
+	height: 100px;
+	margin-top: 100px;
+}
+.quadro1 {
+	float: left;
+	margin-left: 5%;
+	width: 25%;
+	height: 100px;
+}
+.quadro1 .servico-icone {
+	width: 45px;
+	float: left;
+}
+.quadro1 .servico-icone img {
+	max-width: 100%;
+}
+.quadro1 .servico-conteudo {
+	padding-left: 75px;
+}
+.quadro1 .servico-conteudo h4 {
+	margin-bottom: 15px;
+	font-weight: 400;
+}
+.servico-conteudo h3 {
+	color: black;
+}
+
+/*--- Aqui começa o Apresentacao ---*/
+.apresentacao {
+	background-color: black;
+	width: 100%;
+	height: 600px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+
+}
+.apresentacao img {
+	max-width: 100%;
+	display: block;
+	position: absolute;
+  	opacity: 0.15;
+}
+.txt-apto {
+	width: 50%;
+	height: 600px;
+	padding: 25px;
+	float: left;
+	display: block;
+
+}
+.logo-titulo {
+	margin: 45px;
+	margin-left: 35%; 
+	display: block;
+	width: 200px;
+	height: 72px;
+}
+.logo-titulo img {
+	opacity: 1;
+
+}
+.descricao{
+	margin: 50px; 
+	display: block;
+}
+.descricao p {
+	font-size: 16px;
+	color: #fff;
+}
+.vt-inst {
+	width: 40%;
+	height: 600px;
+	padding: 50px;
+	float: left;
+	display: block;
+}
+
+/*--- Aqui começa o Noticia ---*/
+.noticias {
+	width: 100%;
+	height: 520px;
+	background-color: #fff;
+	padding-top: 50px; 
+}
+.noticias-titulo, h3 {
+	text-align: center;
+	color: black;
+}
+.blocos {
+	width: 80%x;
+	height: 900px;
+	margin: 0 10%; 
+}
+.noticias-item {
+	margin-left: 200px;
+	width: 200px;
+	height: 150;
+	float: left;
+}
+
+.noticias-item .noticias-quadro {
+	margin-bottom: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.noticias-item .noticias-quadro img {
+	min-width: 100%;
+}
+
+.noticias-item .noticias-quadro .noticias-cat {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	left: 0;
+	bottom: -19px;
+}
+.noticias-cat {
+	margin-left: 80px;
+}
+.noticias-item .noticias-quadro .noticias-cat span {
+	min-width: 150px;
+	bottom: 0;
+	background: #1bdfb1;
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	display: inline-block;
+	border-radius: 50px;
+	letter-spacing: 2px;
+}
+
+.noticias-item {
+	text-align: center;
+	margin-left: 0 -15px;
+}
+
+.noticias-item .noticias-info .data {
+	color: #1bdfb1;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.noticias-item .noticias-info h4 {
+	font-weight: 400;
+	line-height: 1.3;
+	color: black;
+}
+
+.noticias-item .noticias-info  {
+	padding-top: 15px;
+	color: black;
+}
+.noticias-info {
+	min-width: 350px;
+}
+/*--- Aqui começa o Rodapé ---*/
+.footer {
+	background-color: green;
+	width: 100%;
+	height: 600px;
+}
